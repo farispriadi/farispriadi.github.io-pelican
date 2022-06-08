@@ -1,0 +1,72 @@
+AUTHOR = 'faris priadi'
+SITENAME = 'aladeve'
+SITEURL = 'programming sehari-hari'
+AUTHOR = 'Faris Priadi'
+
+PATH = 'content'
+
+TIMEZONE = 'Asia/Jakarta'
+
+DEFAULT_LANG = 'en'
+
+# Feed generation is usually not desired when developing
+FEED_ALL_ATOM = None
+CATEGORY_FEED_ATOM = None
+TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
+LANDING_PAGE_TITLE = "Learning Python By Building Projects"
+SITE_DESCRIPTION = "Tutorial daring Python: Tutorial python untuk pelajar dan siapapun yang dapat digunakan untuk kehidupan sehari-hari."
+FEATURED_IMAGE = "/images/banner.png"
+PROJECTS_TITLE = "Apps"
+PROJECTS = [{
+    'name': 'Logpad + Duration',
+    'url': 'https://github.com/talha131/logpad-plus-duration#logpad--duration',
+    'description': 'Vim plugin to emulate Windows Notepad logging feature,'
+    ' and log duration of each entry'},
+    {'name': 'Elegant Theme for Pelican',
+    'url': 'http://oncrashreboot.com/pelican-elegant',
+    'description': 'A clean and distraction free theme, with search and a'
+    ' lot more unique features, using Jinja2 and Bootstrap'}]
+
+# Blogroll
+LINKS = ()#('Pelican', 'https://getpelican.com/'),
+         #('Python.org', 'https://www.python.org/'),
+         #('Jinja2', 'https://palletsprojects.com/p/jinja/'),
+         #('You can modify those links in your config file', '#'),)
+
+# Social widget
+SOCIAL = (('LinkedIn','https://www.linkedin.com/in/faris-priadi-9ba17245/'),
+             ('github', 'http://github.com/aladeveloper')
+        )#('You can add links in your config file', '#'),
+          #('Another social link', '#'),)
+
+DEFAULT_PAGINATION = 4
+
+STATIC_PATHS = ['images']
+
+DIRECT_TEMPLATES = (('index', 'tags', 'categories','archives', 'search', '404'))  
+
+
+# Uncomment following line if you want document-relative URLs when developing
+RELATIVE_URLS = True
+
+ARTICLE_URL = '{category}/{slug}'
+ARTICLE_SAVE_AS = '{category}/{slug}.html'
+PAGE_URL = '{slug}'
+PAGE_SAVE_AS = '{slug}.html'
+
+CATEGORY_URL = 'categories/{slug}'
+CATEGORY_SAVE_AS = 'categories/{slug}.html'
+CATEGORIES_SAVE_AS = 'categories.html'
+
+TAG_URL = 'tags/{slug}'
+TAG_SAVE_AS = 'tags/{slug}.html'
+TAGS_SAVE_AS = 'tags.html'
+
+AUTHOR_URL = 'author/{slug}.html'
+AUTHOR_SAVE_AS = 'author/{slug}.html'
+
+PLUGINS = ['tipue_search']
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'authors', 'archives', 'search']
+
